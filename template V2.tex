@@ -1,0 +1,127 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage[ntheorem]{mdframed}
+\usepackage[all]{tcolorbox}
+\usepackage{tikz}
+\usepackage{asymptote}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{mathtools,thmtools,framed}
+\usepackage{lipsum}
+\renewcommand{\familydefault}{\sfdefault}
+\theoremstyle{definition}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{NavyBlue!70!black}, bodyfont=\normalfont,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=NavyBlue, backgroundcolor=NavyBlue!5,
+    }
+]{thmnavybox}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{Blue!70!black}, bodyfont=\normalfont,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=Blue, backgroundcolor=Lavender!35,
+    }
+]{thmbluebox}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{NavyBlue!70!black}, bodyfont=\normalfont,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=NavyBlue
+    }
+]{thmblueline}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{Turquoise!70!black}, bodyfont=\normalfont,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=Turquoise, backgroundcolor=Turquoise!5,
+    }
+]{thmturquoisebox}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{Maroon!95!black}, bodyfont=\normalfont,
+    numbered=no,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=Maroon, backgroundcolor=Maroon!10,
+    },
+    qed=\qedsymbol
+]{thmproofbox}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{Emerald!70!black}, bodyfont=\normalfont,
+    numbered=no,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=Emerald, backgroundcolor=Emerald!10,
+    },
+]{thmexplanationbox}
+
+
+
+\declaretheorem[style=thmnavybox, name=Definition]{definition}
+\declaretheorem[style=thmbluebox, numbered=no, name=Example]{eg}
+\declaretheorem[style=thmturquoisebox, name=Proposition]{prop}
+\declaretheorem[style=thmturquoisebox, name=Theorem]{theorem}
+\declaretheorem[style=thmturquoisebox, name=Lemma]{lemma}
+\declaretheorem[style=thmturquoisebox, numbered=no, name=Corollary]{corollary}
+
+\declaretheorem[style=thmproofbox, name=Proof]{replacementproof}
+\renewenvironment{proof}[1][\proofname]{\vspace{-10pt}\begin{replacementproof}}{\end{replacementproof}}
+
+
+\declaretheorem[style=thmexplanationbox, name=Proof]{tmpexplanation}
+\newenvironment{explanation}[1][]{\vspace{-10pt}\begin{tmpexplanation}}{\end{tmpexplanation}}
+
+\declaretheorem[style=thmblueline, numbered=no, name=Remark]{remark}
+\declaretheorem[style=thmblueline, numbered=no, name=Note]{note}
+
+
+
+
+
+\title{Template v2}
+\author{Aadvik Mohta}
+\date{May 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\begin{theorem}
+    dd
+\end{theorem}
+\begin{note}
+    ff
+\end{note}
+\begin{proof}
+    ff
+\end{proof}
+\begin{definition}
+    ff
+\end{definition}
+\begin{eg}
+    examp
+\end{eg}
+\begin{explanation}
+    dd
+\end{explanation}
+
+\end{document}
